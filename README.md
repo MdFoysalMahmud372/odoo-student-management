@@ -9,7 +9,7 @@ It allows you to manage students, courses, and enroll students in multiple cours
 ## Features
 - **Student Model**: Fields – `name`, `email`, `roll_no`, `department`
 - **Course Model**: Fields – `name`, `code`, `credit`
-- **Many-to-Many Relation**: Students can enroll in multiple courses
+- **Many-to-Many Relation**: Students can enroll in multiple courses. A Course can have multiple Students.
 - **Views**:
   - Form view for adding students and courses
   - Tree (list) view for displaying students
