@@ -51,62 +51,34 @@ Before running this module, make sure you have:
 
 ### Step 1: Clone Repository
 
-git clone <your-github-repo-link>
-cd <your-repo-folder>
+-**Open Terminal / Command Prompt and run**: cd ~/Documents (or any preferred directory)
 
+-**Clone the repository**: git clone https://github.com/MdFoysalMahmud372/odoo-student-management.git
 
-### Step 2: Docker Compose Setup
+-**Go inside the project folder**: cd odoo-student-management
 
-Create a docker-compose.yml file:
-
-services:
-  db:
-    image: postgres:13
-    environment:
-      POSTGRES_DB: odoo
-      POSTGRES_USER: odoo
-      POSTGRES_PASSWORD: odoo
-    volumes:
-      - db_data:/var/lib/postgresql/data
-
-  odoo:
-    image: odoo:16.0
-    depends_on:
-      - db
-    ports:
-      - "8069:8069"
-    volumes:
-      - ./addons:/mnt/extra-addons
-      - ./odoo.conf:/etc/odoo/odoo.conf
-
-volumes:
-  db_data:
-
-### Step 3: Start Docker Containers
+### Step 2: Start Docker Containers
 docker-compose up -d
 
-### Step 4: Access Odoo
+### Step 3: Access Odoo
 
-Open your browser and go to:
+-**Open your browser and go to**: http://localhost:8069
 
-http://localhost:8069
-
-
-Create a new database or use test_db.
+--**Create a new database or use test_db.**
 
 ### Step 5: Install Module
 
-Go to Apps → Update Apps List
+-**Go to Apps → Update Apps List**
 
-Search for Student Management
+-**Search for type**: student_management
 
-Click Install
+-**Click Install**
 
 ##Usage
 
-- **Add Students**: Student Management → Students → Create
+- **Students**: Student Management → Students → Create
 
-- **Add Courses**: Student Management → Courses → Create
+- **Courses**: Student Management → Courses → Create
 
 - **Enroll Students**: Open student form → select multiple courses
 
