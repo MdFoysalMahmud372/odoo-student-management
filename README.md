@@ -104,7 +104,8 @@ Before running this module, make sure you have:
 
 
 
-###GitHub Repository: 
+###GitHub Repository: https://github.com/MdFoysalMahmud372/odoo-student-management
+
 
 
 ##Notes
