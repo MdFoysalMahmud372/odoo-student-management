@@ -74,19 +74,6 @@ Before running this module, make sure you have:
 
 - **Click Install**
 
-##Usage
-
-- **Students**: Student Management → Students → Create
-
-- **Courses**: Student Management → Courses → Create
-
-- **Enroll Students**: Open student form → select multiple courses
-
-- **Generate Reports**: Filter students by course
-
-- **Bonus Button**: "Show Enrolled Courses" in student form
-
-- **Menu Navigation**: Student Management → Students / Courses
 
 ## Challenges Faced & Solutions
 
@@ -104,21 +91,31 @@ Before running this module, make sure you have:
 
 
 
-###GitHub Repository: https://github.com/MdFoysalMahmud372/odoo-student-management
+## GitHub Repository
+
+https://github.com/MdFoysalMahmud372/odoo-student-management
 
 
 
-##Notes
+## Notes
 
 - **Ensure Docker Desktop is running before starting Odoo**
 
 - **Update odoo.conf with correct database credentials if needed**
 
 - **Clean, understandable Python and XML code is used for all module features**
+- **Upgrade the module inside the running container (Use Terminal)**:  docker-compose exec -T odoo odoo -u student_management -d test_db --stop-after-init
+- **Restart Odoo so it reloads with the updated code/views (Use Terminal)**: docker-compose restart odoo
+- **Stop Docker Container (Use Terminal)**: docker-compose down
 
-##License
+
+## License
 
 This project is open for educational purposes and demo assignment submissions.
+
+## Author
+
+Md. Foysal Mahmud
 
 
 
