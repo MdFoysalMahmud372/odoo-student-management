@@ -71,8 +71,9 @@ Before running this module, make sure you have:
 - **Password**: admin
 
 ### Step 5: Install Module
+- **click this link**: http://localhost:8069/web?debug=1
 
-- **Go to Apps → Update Apps List**
+- **Update Apps List**
 
 - **Search for type**: student_management
 
