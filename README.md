@@ -90,17 +90,21 @@ Before running this module, make sure you have:
 
 ## Challenges Faced & Solutions
 
-- **Docker setup issues: Fixed by proper ports and volumes configuration in docker-compose.yml
+- **Docker Setup**: Initially, Odoo and PostgreSQL containers didn’t connect. Fixed by correctly mapping ports and volumes.
 
-- **Odoo 16 compatibility**: Used correct Docker image odoo:16.0
+- **Odoo 16 Compatibility**: Older templates caused issues. Solved by using odoo:16.0 Docker image and updating XML views.
 
-- **Database connection errors**: Configured PostgreSQL environment variables correctly
+- **Database Connection**: Errors due to wrong credentials. Fixed by setting correct PostgreSQL environment variables.
 
-- **Master password errors**: Reset master password in odoo.conf
+- **Master Password Issue**: Access denied while creating database. Solved by resetting master password in odoo.conf.
+
+- **Many-to-Many Relation**: Linking students and courses was tricky. Solved by properly using Many2many field in models.
+
+- **Module Visibility**: Module didn’t appear in Apps. Fixed by updating apps list and ensuring 'installable': True.
 
 
 
-GitHub Repository: <your-github-repo-link>
+###GitHub Repository: 
 
 
 ##Notes
