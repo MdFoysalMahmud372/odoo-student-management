@@ -63,6 +63,8 @@ Before running this module, make sure you have:
 ### Step 3: Access Odoo
 
 - **Open your browser and go to**: http://localhost:8069
+- **if server not open please run this command**: docker-compose exec -T odoo odoo -u student_management -d test_db --stop-after-init
+-  **Then again go to**: http://localhost:8069
 
 - **Create a new database or use test_db.**
 - **Email**: admin
