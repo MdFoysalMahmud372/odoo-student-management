@@ -65,6 +65,8 @@ Before running this module, make sure you have:
 - **Open your browser and go to**: http://localhost:8069
 
 - **Create a new database or use test_db.**
+- **Email**: admin
+- **Password**: admin
 
 ### Step 5: Install Module
 
