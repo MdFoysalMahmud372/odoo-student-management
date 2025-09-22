@@ -1,5 +1,5 @@
 <odoo>
-  <!-- Tree View -->
+  
   <record id="view_student_tree" model="ir.ui.view">
     <field name="name">student.student.tree</field>
     <field name="model">student.student</field>
@@ -13,21 +13,21 @@
     </field>
   </record>
 
-  <!-- Form View -->
+ 
   <record id="view_student_form" model="ir.ui.view">
     <field name="name">student.student.form</field>
     <field name="model">student.student</field>
     <field name="arch" type="xml">
       <form string="Student" create="false" edit="false">
         <header>
-          <!-- Submit button: শুধুমাত্র নতুন record এর সময় -->
+          
           <button name="action_submit_student"
                   type="object"
                   string="Submit"
                   class="btn-primary"
                   attrs="{'invisible': [('id','!=',False)]}"/>
           
-          <!-- Show Enrolled Courses: শুধুমাত্র existing record এর সময় -->
+          
           <button name="action_show_enrolled_courses"
                   type="object"
                   string="Show Enrolled Courses"
@@ -52,7 +52,7 @@
     </field>
   </record>
 
-  <!-- Action -->
+  
   <record id="action_student" model="ir.actions.act_window">
     <field name="name">Students</field>
     <field name="res_model">student.student</field>

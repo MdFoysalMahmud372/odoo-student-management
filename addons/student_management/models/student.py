@@ -6,9 +6,7 @@ class Student(models.Model):
     _name = 'student.student'
     _description = 'Student'
 
-    # ----------------------
-    # Fields
-    # ----------------------
+  
     name = fields.Char(string='Name', required=True)
     email = fields.Char(string='Email', required=True)
     roll_no = fields.Char(string='Roll No', required=True, copy=False, index=True)
@@ -29,13 +27,11 @@ class Student(models.Model):
         string='Courses'
     )
 
-    # ----------------------
-    # Constraints
-    # ----------------------
+  
     @api.constrains('roll_no', 'department', 'email')
     def _check_unique_constraints(self):
         for rec in self:
-            # Roll No must be unique within the same department
+           
             duplicate_roll = self.env['student.student'].search([
                 ('roll_no', '=', rec.roll_no),
                 ('department', '=', rec.department),
@@ -46,7 +42,7 @@ class Student(models.Model):
                     f"Roll No '{rec.roll_no}' already exists in department {rec.department}!"
                 )
 
-            # Email must be globally unique
+           
             duplicate_email = self.env['student.student'].search([
                 ('email', '=', rec.email),
                 ('id', '!=', rec.id)
@@ -56,20 +52,17 @@ class Student(models.Model):
                     f"Email '{rec.email}' is already used by another student!"
                 )
 
-            # Email format validation
+            
             if rec.email and "@gmail.com" not in rec.email:
                 raise ValidationError("Please enter a valid email address!")
 
-    # ----------------------
-    # Button Actions
-    # ----------------------
+  
     def action_submit_student(self):
         """ Custom Submit button - save student and show success notification """
         for rec in self:
             if not rec.name or not rec.roll_no or not rec.email:
                 raise ValidationError("Name, Roll No and Email are required!")
 
-            # record save হবে automatic (Odoo handle করে), তাই শুধু notification দিব
             return {
                 'type': 'ir.actions.client',
                 'tag': 'display_notification',
