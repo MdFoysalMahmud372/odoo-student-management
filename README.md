@@ -22,20 +22,19 @@ It allows you to manage students, courses, and enroll students in multiple cours
 
 ## Prerequisites
 Before running this module, make sure you have:
-- Docker & Docker Desktop (Mac)
-- Docker Compose
-- VS Code (or any code editor)
+- Docker Desktop (Mac)
+- VS Code 
 - Git & GitHub account
 - Basic understanding of Python and PostgreSQL
 
 ---
 
 ## Tools & Technology
-- **Programming Language:** Python
-- **Database:** PostgreSQL 13
+- **Programming Language:** Python 3.10+
+- **Database:** PostgreSQL 13+
 - **ERP Framework:** Odoo 16
 - **Views & UI:** XML (Odoo)
-- **Containerization:** Docker, Docker Compose
+- **Containerization:** Docker
 - **Version Control:** Git, GitHub
 
 ---
