@@ -51,28 +51,28 @@ Before running this module, make sure you have:
 
 ### Step 1: Clone Repository
 
--**Open Terminal / Command Prompt and run**: cd ~/Documents (or any preferred directory)
+- **Open Terminal / Command Prompt and run**: cd ~/Documents (or any preferred directory)
 
--**Clone the repository**: git clone https://github.com/MdFoysalMahmud372/odoo-student-management.git
+- **Clone the repository**: git clone https://github.com/MdFoysalMahmud372/odoo-student-management.git
 
--**Go inside the project folder**: cd odoo-student-management
+- **Go inside the project folder**: cd odoo-student-management
 
 ### Step 2: Start Docker Containers
-docker-compose up -d
+- **Open terminal and run**: docker-compose up -d
 
 ### Step 3: Access Odoo
 
--**Open your browser and go to**: http://localhost:8069
+- **Open your browser and go to**: http://localhost:8069
 
---**Create a new database or use test_db.**
+- **Create a new database or use test_db.**
 
 ### Step 5: Install Module
 
--**Go to Apps → Update Apps List**
+- **Go to Apps → Update Apps List**
 
--**Search for type**: student_management
+- **Search for type**: student_management
 
--**Click Install**
+- **Click Install**
 
 ##Usage
 
