@@ -56,6 +56,7 @@ Before running this module, make sure you have:
 - **Clone the repository**: git clone https://github.com/MdFoysalMahmud372/odoo-student-management.git
 
 - **Go inside the project folder**: cd odoo-student-management
+- **code .**
 
 ### Step 2: Start Docker Containers
 - **Open terminal and run**: docker-compose up -d
